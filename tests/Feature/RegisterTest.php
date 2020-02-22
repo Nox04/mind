@@ -23,7 +23,7 @@ class RegisterTest extends TestCase
             'email' => 'juan.angarita.11@gmail.com',
             'password' => 'password',
             'password_confirmation' => 'password',
-            'name' => 'Juan'
+            'name' => 'Juan',
         ];
 
         $this->json('POST', 'api/auth/register', $payload)
@@ -34,7 +34,7 @@ class RegisterTest extends TestCase
                     'email',
                     'name',
                     'token',
-                    'expires_at'
+                    'expires_at',
                 ]
             ]);
     }

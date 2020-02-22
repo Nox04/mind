@@ -23,7 +23,7 @@ class PassportSeeder extends Seeder
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now(),
 
-            ]
+            ],
         ]);
         DB::table('oauth_personal_access_clients')->insert([
             [
@@ -31,7 +31,7 @@ class PassportSeeder extends Seeder
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now(),
 
-            ]
+            ],
         ]);
     }
 }
