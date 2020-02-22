@@ -10,6 +10,6 @@ $factory->define(DiaryEntry::class, function (Faker $faker) {
     return [
         'entry_date' => $faker->date(),
         'content' => $faker->text(500),
-        'mood' => $faker->randomElement(MoodsEnum::getValues())
+        'mood' => $faker->randomElement(MoodsEnum::getValues()),
     ];
 });

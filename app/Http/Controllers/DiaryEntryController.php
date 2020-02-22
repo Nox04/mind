@@ -21,6 +21,7 @@ class DiaryEntryController extends Controller
     {
         $this->diaryEntry = $diaryEntry;
     }
+    
     /**
      * Display a listing of the resource.
      *

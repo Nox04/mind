@@ -14,7 +14,6 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         factory(User::class, 20)->create()->each(function (User $user) {
-            // Seed the relation with 5 purchases
             $diaryEntries = factory(DiaryEntry::class, 10)->make();
             $user->diaryEntries()->saveMany($diaryEntries);
         });

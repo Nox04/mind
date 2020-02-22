@@ -15,10 +15,10 @@ class DiaryEntry extends Model
     protected $guarded = [];
 
     /**
-     * User relationship
+     * User relationship.
      * @return BelongsTo
      */
-    public function user (): BelongsTo
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }

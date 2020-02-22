@@ -37,7 +37,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * Diary entries relationship
+     * Diary entries relationship.
      * @return HasMany
      */
     public function diaryEntries(): HasMany
