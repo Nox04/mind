@@ -35,7 +35,7 @@ class RegisterTest extends TestCase
                     'name',
                     'token',
                     'expires_at',
-                ]
+                ],
             ]);
     }
 }
