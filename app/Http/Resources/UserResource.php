@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
- * Class UserResource
+ * Class UserResource.
  * @property mixed updated_at
  * @property mixed created_at
  * @property string name

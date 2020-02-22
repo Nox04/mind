@@ -57,8 +57,7 @@ class Handler extends ExceptionHandler
         if ($exception instanceof ModelNotFoundException) {
             return response()->json(['message' => 'Not Found.'], 404);
         }
-        if ($exception instanceof AuthorizationException)
-        {
+        if ($exception instanceof AuthorizationException) {
             return response()->json(['error' => 'This action is unauthorized'],403);
         }
         return parent::render($request, $exception);

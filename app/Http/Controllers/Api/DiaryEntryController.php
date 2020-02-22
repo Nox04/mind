@@ -62,7 +62,6 @@ class DiaryEntryController extends Controller
         return new DiaryEntryResource($diaryEntry);
     }
 
-
     /**
      * Update the specified resource in storage.
      *
@@ -74,6 +73,7 @@ class DiaryEntryController extends Controller
     public function update(DiaryEntryRequest $request, User $user, DiaryEntry $diaryEntry)
     {
         $diaryEntry->update($request->validated());
+
         return new DiaryEntryResource($diaryEntry);
     }
 
@@ -88,6 +88,7 @@ class DiaryEntryController extends Controller
     public function destroy(User $user, DiaryEntry $diaryEntry)
     {
         $diaryEntry->delete();
+
         return response()->json(null, 204);
     }
 }
