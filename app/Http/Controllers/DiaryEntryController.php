@@ -28,8 +28,7 @@ class DiaryEntryController extends Controller
      */
     public function index()
     {
-        dd(Auth::id());
-        return response()->json($this->diaryEntry->where('user_id', Auth::id()));
+        return response()->json($this->diaryEntry->all());
     }
 
     /**

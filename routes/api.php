@@ -11,6 +11,4 @@
 |
 */
 
-Route::middleware(['auth'])->group(function () {
-    Route::resource('diary-entry', 'DiaryEntryController');
-});
+Route::resource('diary-entry', 'DiaryEntryController');
