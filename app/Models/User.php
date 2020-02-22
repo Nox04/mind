@@ -8,6 +8,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 
+/**
+ * @property mixed id
+ */
 class User extends Authenticatable
 {
     use Notifiable, HasApiTokens;
@@ -44,5 +47,21 @@ class User extends Authenticatable
     public function diaryEntries(): HasMany
     {
         return $this->hasMany(DiaryEntry::class);
+    }
+
+    /**
+     * Register a new user.
+     * @param array $input
+     * @return mixed
+     */
+    public function register(array $input)
+    {
+        $input['password'] = bcrypt($input['password']);
+        unset($input['password_confirmation']);
+
+        $userData = $this->create($input);
+        $userData->token = $userData->createToken('MyApp');
+
+        return $userData;
     }
 }
