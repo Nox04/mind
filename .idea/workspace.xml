@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfffeca5-813c-49e8-991e-b3a739c2bb5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/DiaryEntryPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/DiaryEntryPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
@@ -168,11 +177,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.DiaryEntryTest">
+    <configuration name="DiaryEntryTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\DiaryEntryTest" file="$PROJECT_DIR$/tests/Feature/DiaryEntryTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DiaryEntryTest.guests_can_not_access_diary_entries" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\DiaryEntryTest" file="$PROJECT_DIR$/tests/Feature/DiaryEntryTest.php" method="guests_can_not_access_diary_entries" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LoginTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\LoginTest" file="$PROJECT_DIR$/tests/Feature/LoginTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RegisterTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\RegisterTest" file="$PROJECT_DIR$/tests/Feature/RegisterTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="PHPUnit.phpunit.xml" />
+      <item itemvalue="PHPUnit.LoginTest" />
+      <item itemvalue="PHPUnit.RegisterTest" />
+      <item itemvalue="PHPUnit.DiaryEntryTest.guests_can_not_access_diary_entries" />
+      <item itemvalue="PHPUnit.DiaryEntryTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.DiaryEntryTest" />
+        <item itemvalue="PHPUnit.LoginTest" />
+        <item itemvalue="PHPUnit.RegisterTest" />
+        <item itemvalue="PHPUnit.DiaryEntryTest.guests_can_not_access_diary_entries" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -184,7 +224,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582328932298</updated>
-      <workItem from="1582328933441" duration="28790000" />
+      <workItem from="1582328933441" duration="35098000" />
     </task>
     <servers />
   </component>
@@ -201,5 +241,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PHPUnitRunConfigurationType">
+        <watch expression="$diaryEntry-&gt;user_id === $user-&gt;id" language="PHP" />
+        <watch expression="$diaryEntry-&gt;user_id" language="PHP" />
+        <watch expression="$user-&gt;id" language="PHP" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

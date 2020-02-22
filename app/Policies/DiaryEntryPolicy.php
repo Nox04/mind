@@ -19,7 +19,7 @@ class DiaryEntryPolicy
      */
     public function view(User $user, DiaryEntry $diaryEntry)
     {
-        return $diaryEntry->user_id === $user->id;
+        return (int)$diaryEntry->user_id === $user->id;
     }
 
     /**
@@ -31,7 +31,7 @@ class DiaryEntryPolicy
      */
     public function update(User $user, DiaryEntry $diaryEntry)
     {
-        return $diaryEntry->user_id === $user->id;
+        return (int)$diaryEntry->user_id === $user->id;
     }
 
     /**
@@ -43,6 +43,6 @@ class DiaryEntryPolicy
      */
     public function delete(User $user, DiaryEntry $diaryEntry)
     {
-        return $diaryEntry->user_id === $user->id;
+        return (int)$diaryEntry->user_id === $user->id;
     }
 }
