@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\DiaryEntry;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class DiaryEntryController extends Controller
 {
@@ -21,7 +20,7 @@ class DiaryEntryController extends Controller
     {
         $this->diaryEntry = $diaryEntry;
     }
-    
+
     /**
      * Display a listing of the resource.
      *
